@@ -18,6 +18,7 @@
     background-position: center;
     background-size: cover;
 }
+body{width: 100%}
 
 /* ################# header ############# */
 .banner header{
@@ -358,7 +359,7 @@ height: 100%;
     padding: 30px;
 }
 .menubar img{
-    margin-left: 100%;
+    margin-left: 150%;
 }
 .search-bar{
     width: 50%;
