@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* ################ home page ############## */
+.banner{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.78),rgba(0, 0, 0, 0.78)), url(./oro_image/oropeople.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* ################# header ############# */
+.banner header{
+    position: fixed;
+    background: rgb(114, 2, 2);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.search-bar{
+    position: relative;
+    left: 25%;
+    width: 15%;
+    padding: 3px 0;
+    border-radius: 50px;
+    display: flex;
+    justify-content: first baseline;
+    color: rgb(7, 7, 7);
+    border: 1px solid rgb(41, 2, 2);
+    background: rgb(206, 203, 203);
+}
+.search-icon{
+    padding: 5px 5px 0 10px;
+}
+.search-input{
+    padding: 0 20px;
+    width: 100%;
+}
+.search-input input::placeholder{
+    text-transform: lowercase;
+    font-style: italic;
+}
+.search-input input{
+    width: 100%;
+    height: 24px;
+    border: none;
+    background: transparent;
+    color: black;
+}
+.search-bar:hover{
+    box-sizing: 0 4px 8px rgba(0,0,0,0.315);
+}
+.banner .logo img{
+    position: absolute;
+    width: 200px;
+    height: auto;
+    float: left;
+    margin-left: -45px;
+    top: -30px;
+}
+.menubar img{
+width: 40px;
+height: 38px;
+}
+
+nav ul{
+    list-style-type: none;
+    position: absolute;
+    display: none;
+}
+nav ul a{
+    display: block;
+    background: #0d1317;
+    padding: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ad343e;
+    transition: color 2s ease,background 2s ease,padding 2s ease;
+}
+nav ul a:hover{
+    background: #474747;
+    color: #e0e0ce;
+    padding-left: 30px;
+}
+nav{
+    flex: 0 0 auto;
+}
+.banner .content{
+    position: relative;
+    max-width: 750px;
+    text-align: center;
+}
+.banner .content h2{
+    color: #fff;
+    font-size: 60px;
+    animation-name: moveRight;
+    animation-duration: 2s;
+}
+.banner .content p{
+    color: #fff;
+    font-size: 18px;
+    animation-name: moveLeft;
+    animation-duration: 2s;
+}
+
+/* ######## history ######### */
+.history{
+    background: #faebefff;
+    position: relative;
+    padding: 30px 10px;
+    background: #faebefff;
+    text-align: center;
+}
+.text1{
+    text-align: justify;
+    padding: 0px;
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    animation-name: moveLeft;
+    animation-duration: 2s;
+}
+.contentbx1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+.phasebx{
+    background: #fff;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    box-shadow: 3px 3px 30px 5px rgb(233, 216, 219);
+}
+.imgcont{
+    display: flex;
+}
+
+/* ####### geography ######## */
+.geography{
+    display: flex;
+    width: 100%;
+    background: #faebefff;
+}
+
+/* ####### resources ######### */
+.resources{
+    display: flex;
+    background: #faebefff;
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.contentbx{
+    background: #faebefff;
+    padding: 100px;
+    width: 100%;
+}
+.heading{
+    color: #333d79ff;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.text{
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    animation-name: moveLeft;
+    animation-duration: 2s;
+    text-align: justify;
+}
+
+/* ##### education #######*/
+.education{
+    display: flex;
+    display: flex;
+    width: 100%;
+    background: #faebefff;
+}
+
+.politics{
+    display: flex;
+    width: 100%;
+}
+
+/* ####### politics ######## */
+.politics{
+    background: #faebefff;
+}
+
+/* ###### culture ####### */
+.culture{
+    width: 100%;
+    background: #faebefff;
+}
+
+/* ##### contact ####### */
+.contact{
+    min-height: 80vh;
+    background: url(./oro_image/ocean.jpg)center/cover fixed no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-card{
+    flex:  0 60%;
+    padding: 10px 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    flex: 0 0 80%;
+    flex-direction: column;
+    align-items: center;
+}
+form input{
+    margin: 10px 0;
+}
+form h3{
+    text-align: center;
+    text-transform: uppercase;
+    color: #ad343e;
+}
+form input,
+form textarea{
+    padding: 5px;
+    border: 3px solid #ad343e;
+    width: 80%;
+    margin: 0px 50px;
+}
+input::placeholder,
+textarea::placeholder{
+    text-transform: uppercase;
+    color: #0d1317;
+}
+.form-btn{
+    margin: 20px 140px;
+    font-size: 20px;
+    border-radius: 40px;
+    padding: 5px;
+    width: 50%;
+    background: #ad343e;
+    color: #f5f3f5;
+    transition: color 0.2s ease-in-out 0.2s, background 0.1s ease-in-out 0.1s;
+}
+.form-btn:hover{
+    color: #9c0a16;
+    background: #f5f3f5;
+    cursor: pointer;
+}
+footer{
+    background: #0d1317;
+    padding: 60px 0;
+    text-align: center;
+}
+.footer-icons a{
+    display: inline-block;
+    font-size: 30px;
+    margin: 0 30px 20px 10px;
+    padding: 2px 5px;
+    color: white;
+}
+footer p{
+    color: #f5f3f5;
+    font-size: 20px;
+}
+
+/* ##### image section #### */
+img{
+width: 100%;
+height: 100%;
+}
+.imgcont .imgbx img{
+    margin-left: 0px;
+    padding: 0px 0px;
+}
+.imgbx img{
+    padding: 50px 0px;
+}
+/* ######### animation of text ###### */
+@keyframes moveLeft{
+    0% {
+        transform: translateX(120px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+    @keyframes moveRight{
+    0% {
+        transform: translateY(120px);
+        opacity: 0;
+        }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+        }
+}
+
+@media screen and (max-width: 900px){
+.contentbx1{
+    display: block;
+}
+.imgcont{
+    display: block;
+}
+.history{
+    padding-top: 70px;
+}
+.geography{
+    display: block;
+    margin-top: -10px;
+}
+.resources{
+    display: block;
+    margin-top: -30px;
+}
+.education{
+    display: block;
+    margin-top: -30px;
+}
+.politics{
+    display: block;
+    margin-top: -40px;
+}
+.culture{
+    margin-top: -40px;
+}
+.contentbx{
+    padding: 30px;
+}
+.menubar img{
+    margin-left: 200%;
+}
+.search-bar{
+    width: 50%;
+    padding: -10px;
+    left: 40%;
+}
+.search-input{
+width: 100%;
+}
+.banner .logo img{
+    margin-left: -20%;
+}
+.banner .content{
+    padding: 20px;
+}
+form{
+margin: 20px 20px 20px -40px;
+}
+.form-btn{
+    margin-left: 33%;
+    width: 60%;
+}
+}
+
